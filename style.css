@@ -1,0 +1,535 @@
+/* Section Styles */
+section {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.impact .impact-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat h3 {
+    font-size: 2em;
+    color: #f05;
+}
+
+/* Team Section */
+.team .team-members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Events Section */
+.event {
+    background: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 1em 0;
+}
+
+/* Volunteer Button */
+.volunteer-btn {
+    display: inline-block;
+    background: #f05;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: url('https://womenofcolour.org.au/wp-content/uploads/2020/12/shutterstock_1170507103-scaled.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for better text readability */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.donate-btn {
+    padding: 10px 20px;
+    background: #f05;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.donate-btn:hover {
+    background: #d04;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #f05;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Impact Section */
+.impact-stats {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.impact .stat {
+    flex: 1 1 200px;
+    padding: 1em;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    color: #f05;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+/* Team Section */
+.team-members {
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 180px;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+}
+
+/* Events Section */
+.events .event {
+    background: #e8e8e8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.event h3 {
+    color: #f05;
+    font-size: 1.3em;
+}
+
+/* Volunteer and Donate Buttons */
+.volunteer-btn, .donate-btn {
+    display: inline-block;
+    background: #f05;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.volunteer-btn:hover, .donate-btn:hover {
+    background: #d04;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-cards, .impact-stats, .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* About Us Section with Background Video */
+.about {
+    height: 656px;
+    position: relative;
+    
+    padding: 5em 0;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps video behind content */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire section */
+    opacity: 0.5; /* Optional: reduces video visibility to make text more readable */
+}
+
+.about-content {
+
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better contrast */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 1em auto;
+}
+/* About Us Section with Background Video */
+.about {
+    position: relative;
+    color: #fff;
+    padding: 5em 0;
+    display: flex; /* Using flexbox to center the content */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Ensures the section takes full viewport height */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps video behind content */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire section */
+    opacity: 1; /* Ensure the video is fully visible without fading */
+    transition: none; /* Disable any transitions (e.g., fade-in effects) */
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    text-align: center;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better contrast */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 1em auto;
+}
+
+/* Program Section with Background Video */
+/* Program Section with Background Video and Image */
+/* Our Program Section with Background Image */
+.program {
+    position: relative;
+    color: #fff;
+    padding: 5em 0;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.program-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keep the image in the background */
+    background: url("https://media.gettyimages.com/id/931057442/photo/faces-of-indian-people.jpg?s=1024x1024&w=gi&k=20&c=ocnwnoxUdkrASLW7X4TAn1XQgCIVbUk3eIIeF9K8Qc0=") no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire section */
+}
+
+.program-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.program-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.program-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.program-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.program-content li {
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+/* Our Impact Section with Background Image */
+.impact {
+    position: relative;
+    color: #414040;
+    padding: 5em 0;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.impact-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keep the image in the background */
+    background: url("https://media.gettyimages.com/id/527466402/photo/a-class-of-teenage-girls-at-the-kasturba-gandhi-balika-vidayala-school-in-gorakhpur-india.jpg?s=612x612&w=0&k=20&c=BLSwKD6F2FUrks9njIoDdas8E3BsTX2TPyz8ipc_640=") no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire section */
+}
+
+.impact-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.impact-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 2em auto;
+}
+
+.stat {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.stat h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #f05; /* Highlight the number */
+}
+
+.stat p {
+    font-size: 1.2em;
+}
+header nav ul li a:hover {
+    background-color: #f05;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.hero::before {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+}
+
+.hero-text h2, .hero-text p {
+    color: #fff; /* Ensure readability on dark background */
+}
+.video-background video {
+    opacity: 0.6; /* Reduce opacity for better text visibility */
+}
+.donate-btn, .volunteer-btn {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stat {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
+.team .team-members, .impact-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.upcoming-events-background {
+    background-image: url('https://media.gettyimages.com/id/1420065514/photo/a-girl-and-a-boy-picking-up-garbage-and-plastic-from-nature.jpg?s=612x612&w=0&k=20&c=l3NLaQ1sSXk0ovrxhCPb4CWXZCKw9-5aPIsqymhXfkw=');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as per your requirements */
+}
